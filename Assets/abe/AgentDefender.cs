@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
+using UnityEngine.SceneManagement;
 public class AgentDefender : MonoBehaviour
 {
     public Transform[] points;
@@ -64,6 +64,14 @@ public class AgentDefender : MonoBehaviour
 
         transform.position += transform.forward * chaspeed;
 
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            SceneManager.LoadScene("abeGameOver");
+        }
     }
 }
 
