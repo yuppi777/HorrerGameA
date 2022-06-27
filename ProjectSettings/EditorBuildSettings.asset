@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Kitazume/Kitazume.unity
+    guid: 692b02ecb9daca743822a7fefeee874d
   m_configObjects: {}
