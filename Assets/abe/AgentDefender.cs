@@ -70,7 +70,7 @@ public class AgentDefender : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("abeGameOver");
+            SceneManager.LoadScene("GameOver");
         }
     }
 }
