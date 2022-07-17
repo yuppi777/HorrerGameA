@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class AgentDefender : MonoBehaviour
 {
     public Transform[] points;
-    private int destPoint = 0;
-    private NavMeshAgent agent;
-    public GameObject target;
+    private int _destPoint = 0;
+    private NavMeshAgent _agent;
+    public GameObject _target;
     private bool inArea = false;
     public float chaspeed = 0.005f;
 
@@ -16,19 +16,19 @@ public class AgentDefender : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
-        agent.autoBraking = false;
+        _agent = GetComponent<NavMeshAgent>();
+        _agent.autoBraking = false;
         GotoNextPoint();
     }
     void Update()
     {
-        if (agent.remainingDistance < 0.01f)
+        if (_agent.remainingDistance < 0.01f)
             GotoNextPoint();
 
 
-        if (inArea == true && target.activeInHierarchy == true)
+        if (inArea == true && _target.activeInHierarchy == true)
         {
-            agent.destination = target.transform.position;
+            _agent.destination = _target.transform.position;
             EneChasing();
         }
     }
@@ -36,8 +36,8 @@ public class AgentDefender : MonoBehaviour
     {
         if (points.Length == 0)
             return;
-        agent.destination = points[destPoint].position;
-        destPoint = (destPoint + 1) % points.Length;
+        _agent.destination = points[_destPoint].position;
+        _destPoint = (_destPoint + 1) % points.Length;
 
     }
     private void OnTriggerEnter(Collider other)
@@ -45,7 +45,7 @@ public class AgentDefender : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             inArea = true;
-            target = other.gameObject;
+            _target = other.gameObject;
 
             EneChasing();
         }
