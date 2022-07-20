@@ -1,6 +1,10 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/abe/abeGameOver.unity.meta
+guid: ac110ce60877c5d46ad4d785c50424bb
+=======
 guid: b1003c3ce44844e4b9af27d407e9ea61
 folderAsset: yes
+>>>>>>> 0e7607d8e088ea4f8168f7ece57025873357dda4:Assets/Kojima/Scene.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
