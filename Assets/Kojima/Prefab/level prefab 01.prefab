@@ -3003,9 +3003,17 @@ MonoBehaviour:
   assetGuid: 
   m_Mesh: {fileID: 0}
   m_IsSelectable: 1
-  m_SelectedFaces: 
-  m_SelectedEdges: []
-  m_SelectedVertices: 
+  m_SelectedFaces: 15000000
+  m_SelectedEdges:
+  - a: 84
+    b: 85
+  - a: 86
+    b: 84
+  - a: 85
+    b: 87
+  - a: 87
+    b: 86
+  m_SelectedVertices: 54000000550000005600000057000000
 --- !u!1 &340042400021489733
 GameObject:
   m_ObjectHideFlags: 0
