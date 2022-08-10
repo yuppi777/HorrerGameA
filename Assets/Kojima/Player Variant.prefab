@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 1852362851827447323, guid: 7648fe7c341349d419d49c14b1de1309,
         type: 3}
       propertyPath: m_Name
-      value: Player
+      value: Player Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1852362851827447323, guid: 7648fe7c341349d419d49c14b1de1309,
         type: 3}
@@ -90,7 +90,7 @@ PrefabInstance:
     - target: {fileID: 7680052595882070394, guid: 7648fe7c341349d419d49c14b1de1309,
         type: 3}
       propertyPath: mainSPEED
-      value: 0.1
+      value: 0.02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7648fe7c341349d419d49c14b1de1309, type: 3}
