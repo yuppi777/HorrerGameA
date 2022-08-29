@@ -575,7 +575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 629eba68b8e95df49acdb6e08692a65c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneName: abe
+  _sceneName: "Srage01-\u03B1"
 --- !u!114 &1431653750
 MonoBehaviour:
   m_ObjectHideFlags: 0
