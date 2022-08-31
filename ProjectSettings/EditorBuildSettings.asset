@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Kojima/Scene/Srage01-\u03B1.unity"
     guid: 12c7b13eae3c7de478f817f05b84a859
+  - enabled: 1
+    path: Assets/Kitazume/Title.unity
+    guid: 21271e79b60a0454fb763780ee8a70a7
   m_configObjects: {}

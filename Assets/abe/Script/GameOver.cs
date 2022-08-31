@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
@@ -12,8 +13,15 @@ public class GameOver : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         audioSource.PlayOneShot(sound1);
+
+
         audioSource.PlayOneShot(sound2);
+        Invoke("SceneLoad", 3f);
 
+    }
 
+    void SceneLoad()
+    {
+        SceneManager.LoadScene("Title");
     }
 }
