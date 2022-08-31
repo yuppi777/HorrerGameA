@@ -10,7 +10,7 @@ public class CSVRoader : MonoBehaviour
 {
     [SerializeField] private Text TextViewer;
     [SerializeField] private TextAsset CsvFile;
-    [SerializeField] private GameObject Adbentya;
+    //[SerializeField] private GameObject Adbentya;
     List<string[]> CsvDate = new List<string[]>();
     int TextKey = 0;
     public string ToScene;
@@ -63,7 +63,7 @@ public class CSVRoader : MonoBehaviour
 
     void FalseAdventya()
     {
-        Adbentya.SetActive(false);
+        //Adbentya.SetActive(false);
     }
     void TitleBack()
     {
