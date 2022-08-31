@@ -54,6 +54,7 @@ public class CSVRoader : MonoBehaviour
         }
 
         FalseAdventya();
+        TitleBack();
     }
 
     void TextUpdate()
