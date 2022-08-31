@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour
 {
 
     public float mainSPEED;
+    //[SerializeField] int Run =2;
+    private bool _run = true;
     public float x_sensi;
     public float y_sensi;
     public new GameObject camera;
@@ -18,6 +20,7 @@ public class PlayerController : MonoBehaviour
     {
         movecon();
         cameracon();
+        RunPlayer();
     }
 
     void movecon()//プレイヤーを動かす
@@ -36,6 +39,29 @@ public class PlayerController : MonoBehaviour
         y_Rotation = y_Rotation * y_sensi;
         this.transform.Rotate(0, x_Rotation, 0);
         camera.transform.Rotate(-y_Rotation, 0, 0);
+    }
+    void RunPlayer()
+    {
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            if(_run == true)
+            {
+                Debug.Log("shift");
+                mainSPEED += 0.05f;
+                _run = false;
+            }
+            
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            if (_run == false)
+            {
+                Debug.Log("shiftがはなれた");
+                mainSPEED -= 0.05f;
+                
+                _run = true;
+            }
+        }
     }
 }
 
