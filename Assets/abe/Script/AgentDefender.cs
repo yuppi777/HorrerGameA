@@ -10,7 +10,7 @@ public class AgentDefender : MonoBehaviour
     private NavMeshAgent _agent;
     public GameObject _target;
     private bool inArea = false;
-    public float chaspeed = 0.005f;
+    public static float chaspeed = 0.02f;
 
 
     // Start is called before the first frame update
@@ -63,7 +63,7 @@ public class AgentDefender : MonoBehaviour
     public void EneChasing()
     {
 
-        transform.position += transform.forward * chaspeed;
+        transform.position += transform.forward * chaspeed ;
 
     }
 
