@@ -11,9 +11,10 @@ public class PlayerController : MonoBehaviour
     public new GameObject camera;
     void Start()
      {
-     }
-
-    void Update()
+        Cursor.visible = false;
+    }
+    
+    void FixedUpdate()
     {
         movecon();
         cameracon();

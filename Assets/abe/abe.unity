@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 0
+  m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
@@ -405,7 +405,7 @@ MonoBehaviour:
   points:
   - {fileID: 1298452115}
   - {fileID: 210411402}
-  target: {fileID: 1054494306}
+  _target: {fileID: 0}
   chaspeed: 0.005
 --- !u!136 &279611091
 CapsuleCollider:
@@ -761,12 +761,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
---- !u!1 &1054494306 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1852362851827447323, guid: 7648fe7c341349d419d49c14b1de1309,
-    type: 3}
-  m_PrefabInstance: {fileID: 166801490}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1054494313 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3454177265374135304, guid: 7648fe7c341349d419d49c14b1de1309,
@@ -829,7 +823,7 @@ MonoBehaviour:
   points:
   - {fileID: 1298452115}
   - {fileID: 210411402}
-  target: {fileID: 1054494306}
+  _target: {fileID: 0}
   chaspeed: 0.01
 --- !u!136 &1122589963
 CapsuleCollider:
@@ -861,7 +855,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1146360861
 Light:
   m_ObjectHideFlags: 0
@@ -1295,7 +1289,7 @@ MonoBehaviour:
   points:
   - {fileID: 1298452115}
   - {fileID: 210411402}
-  target: {fileID: 0}
+  _target: {fileID: 0}
   chaspeed: 0.005
 --- !u!136 &1513124639
 CapsuleCollider:
@@ -1721,7 +1715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100096, guid: 412b92d4feeb9c548bfa98f62c4d1022, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100096, guid: 412b92d4feeb9c548bfa98f62c4d1022, type: 3}
       propertyPath: m_StaticEditorFlags

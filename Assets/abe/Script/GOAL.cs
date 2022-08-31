@@ -12,8 +12,12 @@ public class GOAL : MonoBehaviour
             if(ItemKey == true)
             {
                 {
-                    SceneManager.LoadScene("abeGameCliar");
+                    SceneManager.LoadScene("abeGaeCliar");
                 }
+            }
+            else
+            {
+                Debug.Log("鍵をさがそう");
             }
         
     }
