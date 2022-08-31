@@ -20,7 +20,8 @@ public class AgentDefender : MonoBehaviour
         _agent.autoBraking = false;
         GotoNextPoint();
     }
-    void Update()
+    
+    void FixedUpdate()
     {
         if (_agent.remainingDistance < 0.01f)
             GotoNextPoint();
@@ -70,6 +71,8 @@ public class AgentDefender : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
+            Cursor.visible = true;
+
             SceneManager.LoadScene("GameOver");
         }
     }
