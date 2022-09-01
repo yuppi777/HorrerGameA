@@ -12,7 +12,7 @@ public class GOAL : MonoBehaviour
             if(ItemKey == true)
             {
                 {
-                    SceneManager.LoadScene("abeGaeCliar");
+                    SceneManager.LoadScene("GameCliea");
                 }
             }
             else

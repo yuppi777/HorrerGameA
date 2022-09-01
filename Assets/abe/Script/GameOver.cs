@@ -22,6 +22,6 @@ public class GameOver : MonoBehaviour
 
     void SceneLoad()
     {
-        SceneManager.LoadScene("Title");
+        //SceneManager.LoadScene("Title");
     }
 }

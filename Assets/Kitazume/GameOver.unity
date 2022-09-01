@@ -432,7 +432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panelfade: {fileID: 604959876}
-  SceneNo: 6
+  SceneNo: 1
 --- !u!114 &604959879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -577,7 +577,7 @@ RectTransform:
   m_GameObject: {fileID: 975803675}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 16, y: 16, z: 16}
+  m_LocalScale: {x: 19, y: 19, z: 16}
   m_Children: []
   m_Father: {fileID: 414738331}
   m_RootOrder: 3
