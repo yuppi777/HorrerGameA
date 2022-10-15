@@ -10,7 +10,7 @@ public class AgentDefender : MonoBehaviour
     private NavMeshAgent _agent;
     public GameObject _target;
     private bool inArea = false;
-    public static float chaspeed = 0.02f;
+    public static float chaspeed = 0.01f;
 
 
     // Start is called before the first frame update
