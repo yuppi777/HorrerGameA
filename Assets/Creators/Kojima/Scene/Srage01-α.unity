@@ -21361,8 +21361,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1990150500696393109, guid: 16950a7715f663949953f410099c73bf,
         type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1990150500696393109, guid: 16950a7715f663949953f410099c73bf,
+        type: 3}
       propertyPath: m_CollisionDetection
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1990150500696393119, guid: 16950a7715f663949953f410099c73bf,
         type: 3}
@@ -21397,7 +21402,7 @@ PrefabInstance:
     - target: {fileID: 6837831583485268205, guid: 16950a7715f663949953f410099c73bf,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.519
+      value: 0.069
       objectReference: {fileID: 0}
     - target: {fileID: 6837831583485268205, guid: 16950a7715f663949953f410099c73bf,
         type: 3}
@@ -32951,7 +32956,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 972693465}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1939358251
 BoxCollider:

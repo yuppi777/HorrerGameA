@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
     }
     void RunPlayer()
     {
-        if (Input.GetKey(KeyCode.LeftShift))
+       /* if (Input.GetKey(KeyCode.LeftShift))
         {
             if(_run == true)
             {
@@ -62,6 +62,7 @@ public class PlayerController : MonoBehaviour
                 _run = true;
             }
         }
+       */
     }
 }
 
