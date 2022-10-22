@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -335,14 +335,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053920541}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 126f7a05c6d3f6d48a5171cbda81f9c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   TextViewer: {fileID: 1197320656}
-  CsvFile: {fileID: 4900000, guid: 0fb77ed3a5d0bbd4f915aa7ae5b8c63d, type: 3}
-  Adbentya: {fileID: 2071316185}
+  CsvFile: {fileID: 4900000, guid: 8e9b288e33b685c41b667f6cbec516a3, type: 3}
+  NameTextViewer: {fileID: 1562277144}
   ToScene: 
 --- !u!114 &1053920544
 MonoBehaviour:
@@ -351,7 +351,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053920541}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 58feb0312a5392442b83a59f3e95609c, type: 3}
   m_Name: 
