@@ -13,7 +13,8 @@ public class PlayerController : MonoBehaviour
     public new GameObject camera;
     void Start()
      {
-        Cursor.visible = false;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Locked;
     }
     
     void FixedUpdate()
@@ -39,6 +40,8 @@ public class PlayerController : MonoBehaviour
         y_Rotation = y_Rotation * y_sensi;
         this.transform.Rotate(0, x_Rotation, 0);
         camera.transform.Rotate(-y_Rotation, 0, 0);
+
+        
     }
     void RunPlayer()
     {
