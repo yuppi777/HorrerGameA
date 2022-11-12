@@ -12,10 +12,16 @@ public class AgentDefender : MonoBehaviour
     private bool inArea = false;
     public static float chaspeed = 0.005f;
 
+    [SerializeField] Animator animator;
+
+    private const string key_isWalk = "IsWalk";
+    private const string key_isRun = "IsRun";
+
 
     // Start is called before the first frame update
     void Start()
     {
+        animator.SetBool(key_isWalk, true);
         _agent = GetComponent<NavMeshAgent>();
         _agent.autoBraking = false;
         GotoNextPoint();
@@ -47,7 +53,8 @@ public class AgentDefender : MonoBehaviour
         {
             inArea = true;
             _target = other.gameObject;
-
+            animator.SetBool(key_isRun, true);
+            animator.SetBool(key_isWalk, false);
             EneChasing();
         }
     }
@@ -56,7 +63,8 @@ public class AgentDefender : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             inArea = false;
-
+            animator.SetBool(key_isWalk, true);
+            animator.SetBool(key_isRun, false);
             GotoNextPoint();
         }
     }

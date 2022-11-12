@@ -666,6 +666,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3106264382813668191, guid: 1a0715ddfc0ac7a4d9014e5b634437cd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.392
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106264382813668191, guid: 1a0715ddfc0ac7a4d9014e5b634437cd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.57
+      objectReference: {fileID: 0}
     - target: {fileID: 3374681632163309791, guid: 1a0715ddfc0ac7a4d9014e5b634437cd,
         type: 3}
       propertyPath: m_RootOrder
@@ -726,6 +736,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 154b12dd0ed6c73488c453d3130dd0fd, type: 2}
+    - target: {fileID: 8493816780498198187, guid: 1a0715ddfc0ac7a4d9014e5b634437cd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.008
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a0715ddfc0ac7a4d9014e5b634437cd, type: 3}
 --- !u!4 &7767902837793393836 stripped
