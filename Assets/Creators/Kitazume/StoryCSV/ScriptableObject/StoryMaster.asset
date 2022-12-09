@@ -15,7 +15,9 @@ MonoBehaviour:
   sheet:
   - storyName: "\u3084\u307F\u3053\u8D77"
     sprite: {fileID: 21300000, guid: e86f16fc2fdbf334090aae6dbb3930cc, type: 3}
+    chara2: {fileID: 21300000, guid: d7961063a6614434d887ccfc200e906b, type: 3}
     CsvFile: {fileID: 4900000, guid: 3f98c10a581687749a8f4d511ebbadd9, type: 3}
   - storyName: "\u3084\u307F\u3053\u627F"
     sprite: {fileID: 21300000, guid: d2cd38ec5b67ba048a1875ba5d4a964b, type: 3}
+    chara2: {fileID: 0}
     CsvFile: {fileID: 4900000, guid: dbdecdc533c5e91469156df3d02a8504, type: 3}
