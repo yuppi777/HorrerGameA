@@ -9,26 +9,27 @@ using UnityEngine.SceneManagement;
 public class CSVRoader : MonoBehaviour
 {
     [SerializeField] private Text TextViewer;
-    [SerializeField] private TextAsset CsvFile;
+    //[SerializeField] private TextAsset CsvFile;
     [SerializeField] private Text NameTextViewer;
+    [SerializeField] private Image NowCommpanionFace;
+    //[SerializeField] private Image Charactoer2;
 
-    //[SerializeField] private GameObject Adbentya;
     List<string[]> CsvDate = new List<string[]>();
     int TextKey = 0;
     public string ToScene;
-    
 
 
-    private void Start()
+
+    //private void Start()
+    //{
+    //    CSVRoad();
+    //    StartCoroutine(TextView());
+    //    //StartCoroutine(NameTextView());
+    //}
+
+    public void CSVRoad(TextAsset textAsset)
     {
-        CSVRoad();
-        StartCoroutine(TextView());
-        //StartCoroutine(NameTextView());
-    }
-
-    void CSVRoad()
-    {
-        StringReader reader = new StringReader(CsvFile.text);
+        StringReader reader = new StringReader(textAsset.text);
 
         while (reader.Peek() != -1)
         {
@@ -38,7 +39,7 @@ public class CSVRoader : MonoBehaviour
 
     }
 
-    IEnumerator TextView()
+    public IEnumerator TextView()
     {
         while (true)
         {
@@ -56,23 +57,22 @@ public class CSVRoader : MonoBehaviour
 
             yield return null;
         }
+        KitazzumeOriginalSceneManager.Instance.SceneUnloadAddtive("TestCSVRoader");
 
-        FalseAdventya();
-        TitleBack();
+
     }
-    
+    public void SetFace(Sprite nowcommpanionface)
+    {
+        NowCommpanionFace.sprite = nowcommpanionface;
+    }
 
-    void TextUpdate()
+
+    public void TextUpdate()
     {
         TextKey += 1;
     }
 
-    void FalseAdventya()
-    {
-        //Adbentya.SetActive(false);
-    }
-    void TitleBack()
-    {
-        SceneManager.LoadScene(ToScene);
-    }
+
+
 }
+

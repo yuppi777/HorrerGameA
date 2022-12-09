@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Creators/Kitazume/GameCliea.unity
     guid: 66ca9a30f3a0f4f4e8de0b4bc54f6eb6
+  - enabled: 1
+    path: Assets/Creators/Kitazume/TestCSVRoader.unity
+    guid: bdc2c4f25e4a13c45ada725a5dba0a48
   m_configObjects: {}
