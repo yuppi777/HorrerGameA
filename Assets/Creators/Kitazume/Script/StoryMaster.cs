@@ -25,6 +25,7 @@ public class StoryMaster : ScriptableObject
     {
         public string storyName;
         public Sprite sprite;
+        public Sprite chara2;
         public TextAsset CsvFile;
         //public StoryMaster.JobPost Post;
 

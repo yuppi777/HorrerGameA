@@ -38,8 +38,8 @@ public class PlayerController : MonoBehaviour
         float y_Rotation = Input.GetAxis("Mouse Y");
         x_Rotation = x_Rotation * x_sensi;
         y_Rotation = y_Rotation * y_sensi;
-        this.transform.Rotate(0, x_Rotation*0.5f, 0);
-        camera.transform.Rotate(-y_Rotation * 0.5f, 0, 0);
+        this.transform.Rotate(0, x_Rotation*4, 0);
+        camera.transform.Rotate(-y_Rotation*4, 0, 0);
 
         
     }
