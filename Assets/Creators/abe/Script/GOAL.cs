@@ -14,7 +14,9 @@ public class GOAL : MonoBehaviour
         {
             if(ItemKey == true)
             {
-                    SceneManager.LoadScene("GameCliea");
+                SceneManager.LoadScene("GameCliea");
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Confined;
             }
             else
             {
@@ -24,6 +26,8 @@ public class GOAL : MonoBehaviour
             if(act.activeKey[4] == true)
             {
                 SceneManager.LoadScene("GameCliea");
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Confined;
             }
             else
             {
