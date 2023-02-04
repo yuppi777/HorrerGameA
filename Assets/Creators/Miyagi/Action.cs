@@ -149,6 +149,7 @@ public class Action : MonoBehaviour
                     activeKey[3] = false;
                     activeKey[4] = true;
                     StartCoroutine(ExplanatoryText(18));
+                    GOAL.ItemKey = true;
                 }
                 else
                 {
