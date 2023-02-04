@@ -11,61 +11,65 @@ public class PlayerController : MonoBehaviour
     public float x_sensi;
     public float y_sensi;
     public new GameObject camera;
+    [SerializeField]
+    private float _speed = 0.01f;
+
     void Start()
-     {
+    {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Locked;
     }
-    
+
     void FixedUpdate()
     {
-        movecon();
-        cameracon();
-        RunPlayer();
-    }
-
-    void movecon()//プレイヤーを動かす
-    {
-        Transform trans = transform;
-        transform.position = trans.position;
-        trans.position += trans.TransformDirection(Vector3.forward) * Input.GetAxis("Vertical") * mainSPEED;
-        trans.position += trans.TransformDirection(Vector3.right) * Input.GetAxis("Horizontal") * mainSPEED;
-    }
-
-    void cameracon()//マウスでカメラを動かす処理
-    {
-        float x_Rotation = Input.GetAxis("Mouse X");
-        float y_Rotation = Input.GetAxis("Mouse Y");
-        x_Rotation = x_Rotation * x_sensi;
-        y_Rotation = y_Rotation * y_sensi;
-        this.transform.Rotate(0, x_Rotation*4, 0);
-        camera.transform.Rotate(-y_Rotation*4, 0, 0);
-
-        
-    }
-    void RunPlayer()
-    {
-       /* if (Input.GetKey(KeyCode.LeftShift))
-        {
-            if(_run == true)
-            {
-                Debug.Log("shift");
-                mainSPEED += 0.05f;
-                _run = false;
-            }
-            
+            movecon();
+            cameracon();
+            RunPlayer();
         }
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+
+        void movecon()//プレイヤーを動かす
         {
-            if (_run == false)
-            {
-                Debug.Log("shiftがはなれた");
-                mainSPEED -= 0.05f;
-                
-                _run = true;
-            }
+            Transform trans = transform;
+            transform.position = trans.position;
+            trans.position += trans.TransformDirection(Vector3.forward) * Input.GetAxis("Vertical") * mainSPEED;
+            trans.position += trans.TransformDirection(Vector3.right) * Input.GetAxis("Horizontal") * mainSPEED;
         }
-       */
+
+        void cameracon()//マウスでカメラを動かす処理
+        {
+            float x_Rotation = Input.GetAxis("Mouse X");
+            float y_Rotation = Input.GetAxis("Mouse Y");
+            x_Rotation = x_Rotation * x_sensi;
+            y_Rotation = y_Rotation * y_sensi;
+            this.transform.Rotate(0, x_Rotation * 4, 0);
+            camera.transform.Rotate(-y_Rotation * 4, 0, 0);
+
+
+        }
+        void RunPlayer()
+        {
+            /* if (Input.GetKey(KeyCode.LeftShift))
+             {
+                 if(_run == true)
+                 {
+                     Debug.Log("shift");
+                     mainSPEED += 0.05f;
+                     _run = false;
+                 }
+
+             }
+             if (Input.GetKeyUp(KeyCode.LeftShift))
+             {
+                 if (_run == false)
+                 {
+                     Debug.Log("shiftがはなれた");
+                     mainSPEED -= 0.05f;
+
+                     _run = true;
+                 }
+             }
+            */
+        }
     }
-}
+
 
