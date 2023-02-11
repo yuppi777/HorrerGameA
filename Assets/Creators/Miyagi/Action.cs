@@ -40,6 +40,7 @@ public class Action : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit))
         {
+            //Debug.Log(hit.collider.name);
             for(int i = 0; i < setObject.Length; i++)
             {
                 if(i == 0)
