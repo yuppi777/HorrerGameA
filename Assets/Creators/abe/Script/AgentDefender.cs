@@ -80,6 +80,7 @@ public class AgentDefender : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.Confined;
 
             SceneManager.LoadScene("GameOver");
         }
