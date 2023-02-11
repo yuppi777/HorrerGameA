@@ -7,28 +7,28 @@ public class GOAL : MonoBehaviour
 {
     public static bool ItemKey = false;
 
-    [SerializeField]Action act;
+    //[SerializeField]Action act;
     private void OnCollisionEnter(Collision collision)
     {
        if(collision.gameObject.tag == "Player")
         {
             if(ItemKey == true)
             {
-                    SceneManager.LoadScene("GameCliea");
+                SceneManager.LoadScene("GameCliea");
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Confined;
             }
             else
             {
                 Debug.Log("鍵をさがそう");
             }
 
-            if(act.activeKey[4] == true)
+            /*if(act.activeKey[4] == true)
             {
                 SceneManager.LoadScene("GameCliea");
-            }
-            else
-            {
-
-            }
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Confined;
+            }*/
 
         }
     }

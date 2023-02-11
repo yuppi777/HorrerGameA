@@ -7,7 +7,7 @@ public class Action : MonoBehaviour
     [SerializeField] GameObject[] setPanel;
     [SerializeField] GameObject[] setObject;
     [SerializeField]public bool[] activeKey;
-    [SerializeField] bool[] selectMusic;
+    [SerializeField,HideInInspector] bool[] selectMusic;
 
     private void Awake()
     {
@@ -141,7 +141,7 @@ public class Action : MonoBehaviour
             case 10: //職員室の棚のカギ
                 setObject[10].SetActive(false);
                 activeKey[3] = true;
-                StartCoroutine(ExplanatoryText(17));
+                StartCoroutine(ExplanatoryText(16));
                 break;
             case 11: //職員室の棚
                 if(activeKey[3] == true)
@@ -149,10 +149,11 @@ public class Action : MonoBehaviour
                     activeKey[3] = false;
                     activeKey[4] = true;
                     StartCoroutine(ExplanatoryText(18));
+                    GOAL.ItemKey = true;
                 }
                 else
                 {
-                    StartCoroutine(ExplanatoryText(16));
+                    StartCoroutine(ExplanatoryText(17));
                 }
                 break;
         }
